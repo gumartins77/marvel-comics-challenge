@@ -14,13 +14,13 @@
 - [ ] Alterar título na aba do navegador de acordo com a página
 - [ ] Ter um menu superior em todas as telas
 - [ ] Consumir API da Marvel
-      -- [ ] Utilizar cookies para salvar informações dos quadrinhos
+- [ ] Utilizar cookies para salvar informações dos quadrinhos
 - [ ] Separar quadrinhos por herói
-      -- [ ] Ordenar heróis por nome
+- [ ] Ordenar heróis por nome
 - [ ] Ter carrossel para navegar entre os quadrinhos do herói
-      -- [ ] Ordenar quadrinhos por data de lançamento
+- [ ] Ordenar quadrinhos por data de lançamento
 - [ ] Ter uma tela para mostrar as informações do quadrinho selecionado
-      -- [ ] Poder clicar em um quadrinho para ver as informações do quadrinho selecionado
+- [ ] Poder clicar em um quadrinho para ver as informações do quadrinho selecionado
 
 Desafios extras:
 
