@@ -35,3 +35,11 @@ export const detailCharacter = async (
   const response = await fetch(url)
   return handleResponse<CharacterDataWrapper>(response)
 }
+
+export const searchCharacters = async (
+  querySearch: string | null,
+): Promise<CharacterDataWrapper> => {
+  const url = `${API_BASE_URL}/characters?nameStartsWith=${querySearch}&limit=99&${query}`
+  const response = await fetch(url)
+  return handleResponse<CharacterDataWrapper>(response)
+}
