@@ -1,10 +1,19 @@
-import { TestComponent } from '@/components/Test'
+import CharacterCard from '@/Components/CharacterCard'
+import { getCharacters } from '@/utils/api'
 
-export default function Home() {
+export default async function Home() {
+  const characters = await getCharacters()
+
   return (
     <main>
-      <h1>Hello world</h1>
-      <TestComponent />
+      <div className="container text-center mt-10">
+        <h1 className="text-3xl font-bold underline">Characters Marvels</h1>
+        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 mt-10">
+          {characters.results.map((character) => (
+            <CharacterCard key={character.id} character={character} />
+          ))}
+        </div>
+      </div>
     </main>
   )
 }
