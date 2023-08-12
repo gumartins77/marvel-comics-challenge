@@ -16,7 +16,7 @@ const Navbar: FC = () => {
   }
 
   return (
-    <header>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="navbar bg-base-100 container">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost normal-case text-xl">
