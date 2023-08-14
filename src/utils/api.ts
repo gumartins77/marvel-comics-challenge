@@ -1,3 +1,4 @@
+import { ComicDataWrapper } from '@/types/comics'
 import { CharacterDataWrapper } from '@/types/marvels'
 import md5 from 'md5'
 // import { getHash } from 'next/dist/server/image-optimizer'
@@ -42,4 +43,18 @@ export const searchCharacters = async (
   const url = `${API_BASE_URL}/characters?nameStartsWith=${querySearch}&limit=99&${query}`
   const response = await fetch(url)
   return handleResponse<CharacterDataWrapper>(response)
+}
+
+export const getComics = async (): Promise<ComicDataWrapper> => {
+  const url = `${API_BASE_URL}/comics?${query}`
+  const response = await fetch(url)
+  return handleResponse<ComicDataWrapper>(response)
+}
+
+export const detailComic = async (
+  comicId: string,
+): Promise<ComicDataWrapper> => {
+  const url = `${API_BASE_URL}/comics/${comicId}?${query}`
+  const response = await fetch(url)
+  return handleResponse<ComicDataWrapper>(response)
 }

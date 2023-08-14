@@ -20,6 +20,9 @@ const Navbar: FC = () => {
       <div className="navbar bg-base-100 container">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost normal-case text-xl">
+            Marvel Characters
+          </Link>
+          <Link href="/comics" className="btn btn-ghost normal-case text-xl">
             Marvel Comics
           </Link>
         </div>
