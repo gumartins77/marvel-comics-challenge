@@ -35,7 +35,9 @@ const SearchPage: FC = () => {
         Search for <span>&quot;{querySearch}&quot;</span>
       </h1>
       {isLoading ? (
-        <div className="mt-10"><LoadingBars /></div>
+        <div className="mt-10">
+          <LoadingBars />
+        </div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 mt-10">
           {characters.map((character) => (

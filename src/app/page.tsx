@@ -1,19 +1,19 @@
-import CharacterCard from '@/Components/CharacterCard'
-import { getCharacters } from '@/utils/api'
+import Image from 'next/image'
+import { FC } from 'react'
 
-export default async function Home() {
-  const characters = await getCharacters()
-
+const Home: FC = () => {
   return (
-    <main>
-      <div className="container text-center mt-10">
-        <h1 className="text-3xl font-bold underline">Characters Marvels</h1>
-        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 mt-10">
-          {characters.results.map((character) => (
-            <CharacterCard key={character.id} character={character} />
-          ))}
-        </div>
-      </div>
-    </main>
+    <div className="card w-full bg-base-200 shadow-xl">
+      <figure>
+        <Image
+          src="/img/marvel-logo.png"
+          alt="Marvel-Logo"
+          width={500}
+          height={400}
+        />
+      </figure>
+    </div>
   )
 }
+
+export default Home
