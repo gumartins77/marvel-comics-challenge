@@ -10,17 +10,17 @@
 ### TO DO
 
 - [ ] Criar uma tela inicial com imagem da Marvel
-- [ ] Criar uma tela para visualizar heróis e seus quadrinhos
+- [x] Criar uma tela para visualizar heróis e seus quadrinhos
 - [ ] Alterar título na aba do navegador de acordo com a página
-- [ ] Ter um menu superior em todas as telas
-- [ ] Consumir API da Marvel https://developer.marvel.com/
+- [x] Ter um menu superior em todas as telas
+- [x] Consumir API da Marvel https://developer.marvel.com/
 - [ ] Utilizar cookies para salvar informações dos quadrinhos
-- [ ] Separar quadrinhos por herói
-- [ ] Ordenar heróis por nome
+- [x] Separar quadrinhos por herói
+- [x] Ordenar heróis por nome
 - [ ] Ter carrossel para navegar entre os quadrinhos do herói
 - [ ] Ordenar quadrinhos por data de lançamento
-- [ ] Ter uma tela para mostrar as informações do quadrinho selecionado
-- [ ] Poder clicar em um quadrinho para ver as informações do quadrinho selecionado
+- [x] Ter uma tela para mostrar as informações do quadrinho selecionado
+- [x] Poder clicar em um quadrinho para ver as informações do quadrinho selecionado
 
 Desafios extras:
 
