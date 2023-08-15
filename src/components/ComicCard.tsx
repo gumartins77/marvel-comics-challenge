@@ -22,7 +22,7 @@ const ComicCard: FC<ComicCardProps> = ({ comic }) => {
         <h2 className="card-title">{comic.title}</h2>
         <div className="card-actions justify-end">
           <Link href={`comic/${comic.id}`} className="btn btn-primary">
-            Detail {comic.title}
+            Detail
           </Link>
         </div>
       </div>

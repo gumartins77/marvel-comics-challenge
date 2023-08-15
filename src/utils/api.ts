@@ -58,3 +58,11 @@ export const detailComic = async (
   const response = await fetch(url)
   return handleResponse<ComicDataWrapper>(response)
 }
+
+export const comicsByCharacter = async (
+  characterId: string,
+): Promise<ComicDataWrapper> => {
+  const url = `${API_BASE_URL}/characters/${characterId}/comics?${query}`
+  const response = await fetch(url)
+  return handleResponse<ComicDataWrapper>(response)
+}

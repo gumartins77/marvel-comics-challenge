@@ -22,7 +22,13 @@ const CharacterCard: FC<CharacterCardProps> = ({ character }) => {
         <h2 className="card-title">{character.name}</h2>
         <div className="card-actions justify-end">
           <Link href={`character/${character.id}`} className="btn btn-primary">
-            Detail {character.name}
+            Detail
+          </Link>
+          <Link
+            href={`character-comics/${character.id}`}
+            className="btn btn-primary"
+          >
+            Comics
           </Link>
         </div>
       </div>
