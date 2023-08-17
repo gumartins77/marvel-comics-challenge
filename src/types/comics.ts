@@ -6,6 +6,18 @@ export interface Comic {
     path: string
     extension: string
   }
+  pageCount: number
+  format: string
+  prices: {
+    type: string
+    price: number
+  }[]
+  creators: {
+    items: { name: string }[]
+  }
+  characters: {
+    items: { name: string }[]
+  }
 }
 
 export interface ComicDataWrapper {

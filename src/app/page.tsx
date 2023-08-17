@@ -6,7 +6,7 @@ const Home: FC = () => {
     <div className="card w-full bg-base-200 shadow-xl">
       <figure>
         <Image
-          src="/img/marvel-logo.png"
+          src={`/img/marvel.jpg`}
           alt="Marvel-Logo"
           width={500}
           height={400}

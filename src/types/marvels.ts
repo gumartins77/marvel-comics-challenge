@@ -6,8 +6,18 @@ export interface Character {
     path: string
     extension: string
   }
+  comics: {
+    available: number
+  }
+  series: {
+    items: { name: string }[]
+  }
+  events: {
+    items: { name: string }[]
+  }
 }
 
 export interface CharacterDataWrapper {
+  realName: string
   results: Character[]
 }
