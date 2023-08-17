@@ -24,12 +24,6 @@ const CharacterCard: FC<CharacterCardProps> = ({ character }) => {
           <Link href={`character/${character.id}`} className="btn btn-primary">
             Detail
           </Link>
-          <Link
-            href={`character-comics/${character.id}`}
-            className="btn btn-primary"
-          >
-            Comics
-          </Link>
         </div>
       </div>
     </div>
