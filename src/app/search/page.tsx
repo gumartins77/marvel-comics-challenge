@@ -30,22 +30,27 @@ const SearchPage: FC = () => {
   }, [querySearch])
 
   return (
-    <div className="container text-center mt-10">
-      <h1 className="text-3xl font-bold">
-        Search for <span>&quot;{querySearch}&quot;</span>
-      </h1>
-      {isLoading ? (
-        <div className="mt-10">
-          <LoadingBars />
-        </div>
-      ) : (
-        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 mt-10">
-          {characters.map((character) => (
-            <CharacterCard key={character.id} character={character} />
-          ))}
-        </div>
-      )}
-    </div>
+    <>
+      <head>
+        <title>Search</title>
+      </head>
+      <div className="container text-center mt-10">
+        <h1 className="text-3xl font-bold">
+          Search for <span>&quot;{querySearch}&quot;</span>
+        </h1>
+        {isLoading ? (
+          <div className="mt-10">
+            <LoadingBars />
+          </div>
+        ) : (
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 mt-10">
+            {characters.map((character) => (
+              <CharacterCard key={character.id} character={character} />
+            ))}
+          </div>
+        )}
+      </div>
+    </>
   )
 }
 

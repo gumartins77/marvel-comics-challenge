@@ -4,11 +4,6 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Marvel-Comics',
-  description: 'Marvel-Comics-Challenge',
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -16,6 +11,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="icon" href="/img/icons8-marvel-48.png" type="image/png" />
+        <title>Marvel</title>
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
