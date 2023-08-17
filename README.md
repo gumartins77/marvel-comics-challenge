@@ -9,7 +9,7 @@
 
 ### TO DO
 
-- [ ] Criar uma tela inicial com imagem da Marvel
+- [x] Criar uma tela inicial com imagem da Marvel
 - [x] Criar uma tela para visualizar heróis e seus quadrinhos
 - [ ] Alterar título na aba do navegador de acordo com a página
 - [x] Ter um menu superior em todas as telas
